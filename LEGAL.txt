@@ -1,0 +1,22 @@
+Bandbit - Dual Licensed under Apache 2.0 and MIT
+
+Bandbit is licensed under the same terms as Racket, meaning that it is available under a dual-license. 
+You may choose to use Bandbot under either:
+
+1. The Apache License, Version 2.0 (the "Apache 2.0 License")
+   OR
+2. The MIT License (the "MIT License")
+
+Copies of both licenses are provided below. You may choose which one you wish to apply to your use of Rackoon. 
+Please note that these licenses apply to the software provided here, and you should refer to the license text 
+for the terms governing your rights and responsibilities.
+
+For more details, please consult the full text of the respective licenses:
+
+Apache License, Version 2.0:
+https://www.apache.org/licenses/LICENSE-2.0
+
+MIT License:
+https://opensource.org/licenses/MIT
+
+By using this software, you acknowledge that you have read and understood the terms and conditions provided under these licenses.

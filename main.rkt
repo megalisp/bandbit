@@ -13,8 +13,17 @@
                #:auto-shard #t
                #:intents (list intent-guilds intent-guild-messages)))
 
-;; Command prefix
-(define prefix "🦝")
+;; Command prefixes (emoji string and fallback)
+;; (/:bb: to get id. Per-server should need to be set)
+(define prefixes (list "<:bb:1399848078692847676>" "🦝"))
+
+;; Match prefix with optional space
+(define (match-prefix content)
+  (for/or ([p prefixes])
+    (cond
+      [(string-prefix? content p) p]
+      [(string-prefix? content (string-append p " ")) p]
+      [else #f])))
 
 ;; Helper: send message to channel
 (define (say client channel content)
@@ -49,7 +58,7 @@
      (say client
           (hash-ref payload 'channel_id)
           (string-join
-           (map (λ (cmd) (format "~a~a" prefix cmd))
+           (map (λ (cmd) (format "~a~a" (car prefixes) cmd))
                 (hash-keys commands))
            "\n")))
 
@@ -91,11 +100,13 @@
    (define author-id (and author (hash-ref author 'id #f)))
    (define self-id (hash-ref (client-user client) 'id))
 
-   ;; Ignore messages from self or missing content
+   (define used-prefix (match-prefix content))
+
+   ;; Ignore messages from self and match prefix with or without space
    (when (and author-id
-              (not (string=? author-id self-id))
-              (string-prefix? content prefix))
-     (define cmdline (substring content (string-length prefix)))
+              used-prefix
+              (not (string=? author-id self-id)))
+     (define cmdline (string-trim (substring content (string-length used-prefix))))
      (define parts (string-split cmdline))
      (define cmd (string-downcase (car parts)))
      (define args (cdr parts))

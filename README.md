@@ -71,14 +71,80 @@ BOT_TOKEN   | Your Discord bot token
 ---
 
 ## 🗺️ Roadmap
+> These aren't really a roadmap, in that I have no real specific plan ... but, these are things I more-or-less want so a grab-bag of features I'm interested in implementing "eventually" in some real loose order.
 
-...
+That being said,
+
+<details>
+<summary>Role checks / permissions</summary>
+<p>
+Start by implementing user role validation to restrict command usage based on Discord roles. This provides essential control for admin-level and sensitive features.
+</p>
+</details>
+
+<details>
+<summary>Logging and analytics for command usage</summary>
+<p>
+Track command usage and errors. This helps with debugging, feature planning, and understanding how the bot is used across servers.
+</p>
+</details>
+
+<details>
+<summary>Persistent user and configuration storage</summary>
+<p>
+Store server-wide settings and state persistently across bot restarts using files or a database backend. Enables features like saved roles or command preferences.
+</p>
+</details>
+
+<details>
+<summary>Modular plugin system</summary>
+<p>
+Refactor commands into independent modules. This allows hot-reloading, optional features, and cleaner long-term architecture.
+</p>
+</details>
+
+<details>
+<summary>Scheduled tasks and reminders</summary>
+<p>
+Allow users to schedule timed events and reminders within the server, like daily pings, countdowns, or temporary role applications.
+</p>
+</details>
+
+<details>
+<summary>Auto-moderation and spam detection</summary>
+<p>
+Add basic automatic moderation features such as anti-spam filters, banned word detection, or mass ping throttling.
+</p>
+</details>
+
+<details>
+<summary>Integration with external APIs and services</summary>
+<p>
+Extend bot features by connecting to outside services like weather, feeds, or custom APIs. Great for pulling in dynamic or community-specific data.
+</p>
+</details>
+
+<details>
+<summary>Dynamic status / activity messages</summary>
+<p>
+Enable the bot to cycle through various statuses (e.g., help prompt, server stats, funny messages) to keep presence engaging and informative.
+</p>
+</details>
+
+<details>
+<summary>Racket-based management GUI</summary>
+<p>
+Build a local GUI using Racket’s GUI toolkit to manage the bot’s configuration, view logs, test commands, and monitor runtime state.
+</p>
+</details>
+
+
 
 ---
 
 ## 📜 License
 
-MIT / Apache-2.0
+Dual-Licensed Under MIT x Apache-2.0
 
 ---
 

@@ -1,26 +1,123 @@
-/* custom.css */
+/* ==========================
+   Metal Raccoon custom.css
+   ========================== */
 
+:root {
+  --raccoon-black: #1e1e1e;
+  --raccoon-gray: #444444;
+  --raccoon-light: #fdfdfd;
+  --raccoon-steel: #6c757d;
+  --raccoon-ash: #ced4da;
+  --raccoon-ring1: #333333;
+  --raccoon-ring2: #aaaaaa;
+}
+
+/* Body */
+body {
+  background-color: var(--raccoon-light);
+  color: var(--raccoon-black);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: var(--raccoon-black);
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--raccoon-steel);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--raccoon-black);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--raccoon-black);
+}
+
+.navbar-brand {
+  color: var(--raccoon-ash) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--raccoon-ash);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .active .nav-link {
+  color: var(--raccoon-steel);
+}
+
+/* Article */
+article {
+  background-color: white;
+  border-left: 6px solid var(--raccoon-steel);
+  padding: 1em;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.date-and-tags,
+.authors {
+  font-style: italic;
+  color: var(--raccoon-gray);
+}
+
+/* Code styles */
 code {
-    color: black;
+  color: #000;
+  background-color: #f0f0f0;
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
 }
 
-/* When highlighted code blocks are too wide, they wrap. Resulting in the */
-/* line numbers column's rows not lining up with the code rows. Prevent */
-/* wrapping. */
 pre {
-    white-space: pre;
-    width: inherit;
+  background-color: #f8f8f8;
+  padding: 1em;
+  overflow-x: auto;
+  border-left: 4px solid var(--raccoon-steel);
+  white-space: pre;
 }
 
+/* Images in posts */
 article img {
-  /* Make sure that images within blog articles never take more width
-     than the article width; `height: auto` ensures the height is also
-     resized proportionally.
-
-     This is useful given that Markdown itself gives you little
-     control over image resizing, and in particular no way to achieve
-     this "best fit" behavior.
- */
   max-width: 100%;
   height: auto;
+  border: 1px solid var(--raccoon-ring2);
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--raccoon-black);
+  color: var(--raccoon-ash);
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 6px solid var(--raccoon-steel);
+}
+
+/* Ringtail accent bar */
+article::before {
+  content: '';
+  display: block;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--raccoon-ring1),
+    var(--raccoon-ring1) 16px,
+    var(--raccoon-ring2) 16px,
+    var(--raccoon-ring2) 32px
+  );
+  margin-bottom: 1em;
+  border-radius: 3px;
 }

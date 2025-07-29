@@ -1,7 +1,3 @@
-/* ==========================
-   Metal Raccoon custom.css
-   ========================== */
-
 :root {
   --raccoon-black: #1e1e1e;
   --raccoon-gray: #444444;
@@ -12,7 +8,6 @@
   --raccoon-ring2: #aaaaaa;
 }
 
-/* Body */
 body {
   background-color: var(--raccoon-light);
   color: var(--raccoon-black);
@@ -23,13 +18,11 @@ body {
   padding: 0;
 }
 
-/* Headings */
 h1, h2, h3, h4, h5 {
   color: var(--raccoon-black);
   font-weight: 600;
 }
 
-/* Links */
 a {
   color: var(--raccoon-steel);
   text-decoration: underline;
@@ -39,7 +32,6 @@ a:hover {
   color: var(--raccoon-black);
 }
 
-/* Navbar */
 .navbar {
   background-color: var(--raccoon-black);
 }
@@ -57,7 +49,17 @@ a:hover {
   color: var(--raccoon-steel);
 }
 
-/* Article */
+.navbar .btn-outline-light {
+  border-color: var(--raccoon-ring2);
+  color: var(--raccoon-ash);
+  margin-left: 1em;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: var(--raccoon-ring2);
+  color: var(--raccoon-black);
+}
+
 article {
   background-color: white;
   border-left: 6px solid var(--raccoon-steel);
@@ -72,7 +74,6 @@ article {
   color: var(--raccoon-gray);
 }
 
-/* Code styles */
 code {
   color: #000;
   background-color: #f0f0f0;
@@ -88,7 +89,6 @@ pre {
   white-space: pre;
 }
 
-/* Images in posts */
 article img {
   max-width: 100%;
   height: auto;
@@ -96,7 +96,6 @@ article img {
   border-radius: 4px;
 }
 
-/* Footer */
 footer {
   background-color: var(--raccoon-black);
   color: var(--raccoon-ash);
@@ -106,7 +105,6 @@ footer {
   border-top: 6px solid var(--raccoon-steel);
 }
 
-/* Ringtail accent bar */
 article::before {
   content: '';
   display: block;

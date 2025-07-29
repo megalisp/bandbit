@@ -8,9 +8,11 @@
   <p align="center">A Raccoon-Themed, Racket-Based Discord Bot.</p>
 </blockquote>
 
+
+
 ---
 
-> 🦝 + 🤖
+> 🤖 + 🦝 = <img src="_res/emoji.png" width=16>
 
 [Bandbit](https://megalisp.github.io/bandbit) is the personal Discord bot for [Megalisp](https://github.com/megalisp) and their community [The Megaplex]() and related communities / projects.  
 Use at your own risk — we’re raccoon-dogfooding it, building it primarily to suit our own needs and wants.
@@ -23,13 +25,13 @@ Use at your own risk — we’re raccoon-dogfooding it, building it primarily to
 
 Command         | Description
 ----------------|------------------------------------------
-🦝echo [...]     | Echoes back your message
-🦝ping           | Replies with "Pong!"
-🦝server         | Shows the server name and ID
-🦝help           | Lists available commands
-🦝avatar         | Shows your profile picture URL
-🦝say [...]      | Deletes your message and reposts it as the bot
-🦝reverse [...]  | Reverses your message text
+<img src="_res/emoji.png" width=16> `or` 🦝echo [...]     | Echoes back your message
+<img src="_res/emoji.png" width=16> `or`🦝ping           | Replies with "Pong!"
+<img src="_res/emoji.png" width=16> `or`🦝server         | Shows the server name and ID
+<img src="_res/emoji.png" width=16> `or`🦝help           | Lists available commands
+<img src="_res/emoji.png" width=16> `or`🦝avatar         | Shows your profile picture URL
+<img src="_res/emoji.png" width=16> `or`🦝say [...]      | Deletes your message and reposts it as the bot
+<img src="_res/emoji.png" width=16> `or`🦝reverse [...]  | Reverses your message text
 
 ---
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">BANDBIT: BANDBIT</title>
+ <link rel="self" href="https://megalisp.github.io/bandbit//bandbit/feeds/all.atom.xml" />
+ <link href="https://megalisp.github.io/bandbit//bandbit/index.html" />
+ <id>urn:https-megalisp-github-io-bandbit:-bandbit-index-html</id>
+ <updated>2025-07-29T05:00:00Z</updated>
+ <entry>
+  <title type="text">Pre-Release Announcement</title>
+  <link rel="alternate" href="https://megalisp.github.io/bandbit//bandbit/2025/07/pre-release-announcement.html?utm_source=all&amp;utm_medium=Atom" />
+  <id>urn:https-megalisp-github-io-bandbit:-bandbit-2025-07-pre-release-announcement-html</id>
+  <published>2025-07-29T05:00:00Z</published>
+  <updated>2025-07-29T05:00:00Z</updated>
+  <author>
+   <name>Joshua Steven Grant (ie: Jost Grant)</name></author>
+  <content type="html">
+&lt;p&gt;&amp;hellip;&lt;/p&gt;&lt;a href="https://megalisp.github.io/bandbit//bandbit/2025/07/pre-release-announcement.html?utm_source=all&amp;amp;utm_medium=Atom"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</content></entry></feed>

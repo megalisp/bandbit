@@ -15,7 +15,7 @@
 
 ;; Command prefixes (emoji string and fallback)
 ;; (/:bb: to get id. Per-server should need to be set)
-(define prefixes (list "<:bb:1399848078692847676>" "🦝"))
+(define prefixes (list "<:bb:1399852656876458076>" "🦝"))
 
 ;; Match prefix with optional space
 (define (match-prefix content)

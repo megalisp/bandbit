@@ -12,6 +12,14 @@
 
 ---
 
+> **STATUS:**
+Currently I'm working on a pre-release version of [Cordian](https://github.com/megalisp/cordian) that this bot will be ported to. Which will act as a middleware bot-api kind of thing between bandbit and racket-cord which is super low-level (basically, mostly http endpoints).
+---
+
+---
+
+---
+
 > 🤖 + 🦝 = <img src="_res/emoji.png" width=16>
 
 [Bandbit](https://megalisp.github.io/bandbit) is the personal Discord bot for [Megalisp](https://github.com/megalisp) and their community [The Megaplex]() and related communities / projects.  

@@ -33,6 +33,21 @@
 (set-cmd-prefix! "🦝")
 
 
+
+
+(rec #:chan-id "1397292532240748574"
+  #:outputs "micro"
+  #:disp-timestamp #t
+  #:disp-guild #t
+  #:disp-channel #t
+  #:disp-username #t
+  #:newline #t
+  #:buffer #t
+  #:only-user "1387175046522339328")
+
+
+
+
 (start-heartbeat bot-client "1403469527559438386") ;; #heart channel ID
 
 (debug-log "BOT" "Starting bot client...")

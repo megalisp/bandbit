@@ -35,7 +35,7 @@
 
 (rec #:chan-id "1397292532240748574"
   #:outputs "micro"
-  #:full-path "/var/room/bandbit/REC/"
+  #:full-path "/var/room/bandbit/.bandbit/REC/"
   #:disp-timestamp #t
   #:disp-guild #t
   #:disp-channel #t

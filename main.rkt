@@ -33,10 +33,9 @@
 (set-cmd-prefix! "🦝")
 
 
-
-
 (rec #:chan-id "1397292532240748574"
   #:outputs "micro"
+  #:full-path "/var/room/bandbit/REC/"
   #:disp-timestamp #t
   #:disp-guild #t
   #:disp-channel #t
@@ -44,8 +43,6 @@
   #:newline #t
   #:buffer #t
   #:only-user "1387175046522339328")
-
-
 
 
 (start-heartbeat bot-client "1403469527559438386") ;; #heart channel ID

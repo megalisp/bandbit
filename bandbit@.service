@@ -1,0 +1,18 @@
+[Unit]
+Description=Bandbit Racket Bot
+After=network.target
+
+
+
+
+[Service]
+Type=simple
+WorkingDirectory=/home/%i/.bandbit
+EnvironmentFile=-/home/%i/.bandbit/BOT_TOKEN.sh
+ExecStartPre=/bin/sh -c 'if [ ! -f "/home/%i/.bandbit/SRC/main.rkt" ]; then echo "/home/%i/.bandbit/SRC/main.rkt not found"; exit 1; fi; if [ ! -f "/home/%i/.bandbit/BOT_TOKEN.sh" ]; then echo "/home/%i/.bandbit/BOT_TOKEN.sh not found"; exit 1; fi; . /home/%i/.bandbit/BOT_TOKEN.sh; if [ -z "${BOT_TOKEN}" ]; then echo "BOT_TOKEN is not set"; exit 1; fi'
+ExecStart=/usr/bin/racket /home/%i/.bandbit/SRC/main.rkt
+Restart=on-failure
+User=%i
+
+[Install]
+WantedBy=multi-user.target

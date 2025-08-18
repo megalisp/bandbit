@@ -27,9 +27,17 @@
        #:debug-event-logger #t
        #:debug-responses #t))
 
+  ;; See what this actually is / is needed?
+  ;;(make-client bot-token
+  ;;             #:auto-shard #t
+
+
 (start-command-dispatcher bot-client)
 
-
+;; Command prefixes (Need to add emoji string and  raccoon as the fallback)
+;; (/:bb: to get id. Per-server should need to be set)
+;; Used to be able to do:
+;;(define prefixes (list "<:bb:1399852656876458076>" "🦝"))
 (set-cmd-prefix! "🦝")
 
 
@@ -47,6 +55,9 @@
 
 (start-heartbeat bot-client "1403469527559438386") ;; #heart channel ID
 
+
 (debug-log "BOT" "Starting bot client...")
 (start-client bot-client)
+
+
 (debug-log "BOT" "start-client returned (this should not happen unless the client stops).")

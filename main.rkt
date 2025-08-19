@@ -25,7 +25,15 @@
                        intent-guild-members)
        #:debug-bot-token #f
        #:debug-event-logger #t
-       #:debug-responses #t))
+       #:debug-responses #t
+       
+       #:censor #t
+       #:censor-send-warning #t
+       #:censor-audit-chan-id "1397290196440973322"
+       #:censor-all-langs #f
+       #:censor-these-langs '("en" "es")
+       #:censor-whitelist '("poo" "poop" "poopie")
+       #:censor-blacklist '("crap" "caca")))
 
   ;; See what this actually is / is needed?
   ;;(make-client bot-token

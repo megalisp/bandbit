@@ -1,2 +1,6 @@
 token.txt
 *.rec
+
+# Ignore all .txt files in all directories
+*.txt
+**/*.txt
